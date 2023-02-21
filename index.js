@@ -15,7 +15,7 @@ const app = express();
 const port = process.env.PORT || 4545;
 
 app.use(express.json());
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://magnificent-rose-antelope.cyclic.app" }));
 app.use(cookieParser());
 
 app.use("/api/auth", AuthRouter);
